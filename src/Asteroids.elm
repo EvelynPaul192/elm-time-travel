@@ -8,6 +8,7 @@ module Asteroids exposing (game)
 import Playground exposing (..)
 import Random
 import Set
+import TimeTravel exposing (addTimeTravel)
 
 game =
   { initialState = initialState
@@ -30,7 +31,7 @@ bulletColor = yellow
 bulletRadius = 2
 
 -- new const where the ship has a safe zone so asteroids can't touch it 
-shipSafeRadius = 100  
+shipSafeRadius = 150
 safeRadiusColor = rgb 255 0 0 
 
 ------ MODEL ------
